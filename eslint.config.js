@@ -40,7 +40,6 @@ export default [
 			'jsdoc/implements-on-classes': ['error'], // Recommended
 			'jsdoc/match-description': ['error'],
 			'jsdoc/multiline-blocks': ['error'], // Recommended
-//			'jsdoc/newline-after-description': ['error'], // Recommended
 			'jsdoc/no-bad-blocks': ['error'],
 			'jsdoc/no-defaults': ['error'],
 			'jsdoc/no-missing-syntax': 0, // Not sure what this does
