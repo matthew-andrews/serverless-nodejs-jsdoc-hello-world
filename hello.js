@@ -10,7 +10,7 @@ import {message} from './lib/message.js'
 /**
  * Hello World Lambda function.
  * @async
- * @returns {Promise<Message>} Returns message.
+ * @returns {Promise<Message>} Returns a message.
  */
 export async function world() {
 	return message();
