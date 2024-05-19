@@ -13,7 +13,7 @@ provider:
   logRetentionInDays: 14
 
 functions:
-  scanner:
+  hello:
     handler: hello.world
     timeout: 5
 
@@ -24,6 +24,7 @@ custom:
 
 plugins:
   - serverless-prune-plugin
+  - serverless-offline
 
 package:
   exclude:
