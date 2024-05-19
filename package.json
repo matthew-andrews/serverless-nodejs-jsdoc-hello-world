@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "yarn run types && yarn run lint && yarn run unit",
+    "lint": "echo TODO",
+    "unit": "echo TODO",
+    "deploy": "serverless deploy",
+    "types": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/npmlog": "^7.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "npmlog": "^7.0.1"
+  }
+}
