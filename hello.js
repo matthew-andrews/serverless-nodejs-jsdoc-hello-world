@@ -9,12 +9,9 @@ import {message} from './lib/message.js'
 
 /**
  * Hello World Lambda function.
- *
  * @async
- * @return {Promise<Message>} Returns message.
+ * @returns {Promise<Message>} Returns message.
  */
 export async function world() {
-	return {
-		hello: 'world'
-	};
+	return message();
 }
