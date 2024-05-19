@@ -7,4 +7,3 @@ import {message} from '../../lib/message.js';
 test('message is a message', () => {
 	expect(message().hello).toEqual('world');
 });
-
