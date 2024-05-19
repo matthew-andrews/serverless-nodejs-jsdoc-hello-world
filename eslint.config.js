@@ -25,6 +25,7 @@ export default [
 			}
 		},
 		rules: {
+			indent: ['error', 'tab'], // Enforce use of tab character because why else does it exist?
 			'jsdoc/check-access': ['error'], // Recommended
 			'jsdoc/check-alignment': ['error'], // Recommended
 			'jsdoc/check-examples': 0, // Cannot use in the current version
