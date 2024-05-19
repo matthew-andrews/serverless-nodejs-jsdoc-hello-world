@@ -27,6 +27,8 @@ plugins:
   - serverless-offline
 
 package:
-  exclude:
-    - test/**
+  patterns:
+    - "!.aws/**"
+    - "!.github/**"
+    - "!test/**"
   individually: true
