@@ -5,9 +5,6 @@
 
 /// <reference path="./index.d.ts" />
 
-import log from 'npmlog';
-log.level = process.env.LOG_LEVEL || 'info';
-
 /**
  * Hello World Lambda function.
  *
