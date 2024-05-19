@@ -7,7 +7,9 @@
     "unit": "echo TODO",
     "deploy": "serverless deploy",
     "types": "tsc",
-    "run-local": "serverless offline"
+    "run-local": "serverless offline",
+    "smoke-test": "serverless invoke --function hello",
+    "smoke-test-local": "serverless invoke local --function hello"
   },
   "devDependencies": {
     "@types/node": "^20.12.12",
