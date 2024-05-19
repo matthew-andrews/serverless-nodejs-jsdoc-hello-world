@@ -1,0 +1,32 @@
+service: helloworld
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  region: ap-northeast-1
+  iam:
+    role: arn:aws:iam::862433486593:role/ApplicationRoleFor_helloworld
+  environment:
+    LOG_LEVEL: info
+  logRetentionInDays: 14
+
+functions:
+  hello:
+    handler: hello.world
+    timeout: 5
+
+custom:
+  prune:
+    automatic: true
+    number: 3
+
+plugins:
+  - serverless-prune-plugin
+  - serverless-offline
+
+package:
+  exclude:
+    - test/**
+  individually: true
