@@ -2,6 +2,7 @@
   "type": "module",
   "scripts": {
     "test": "yarn run types && yarn run lint && yarn run unit",
+    "build": "serverless package",
     "lint": "echo TODO",
     "unit": "echo TODO",
     "deploy": "serverless deploy",
@@ -10,6 +11,8 @@
   "devDependencies": {
     "@types/node": "^20.12.12",
     "@types/npmlog": "^7.0.0",
+    "serverless": "^3.38.0",
+    "serverless-prune-plugin": "^2.0.2",
     "typescript": "^5.4.5"
   },
   "dependencies": {
