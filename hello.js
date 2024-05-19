@@ -5,6 +5,8 @@
 
 /// <reference path="./index.d.ts" />
 
+import {message} from './lib/message.js'
+
 /**
  * Hello World Lambda function.
  *

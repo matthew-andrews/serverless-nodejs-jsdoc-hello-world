@@ -4,7 +4,7 @@
     "test": "yarn run types && yarn run lint && yarn run unit",
     "build": "serverless package",
     "lint": "echo TODO",
-    "unit": "echo TODO",
+    "unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "deploy": "serverless deploy",
     "types": "tsc",
     "run-local": "serverless offline",
@@ -12,8 +12,10 @@
     "smoke-test-local": "serverless invoke local --function hello"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
     "@types/node": "^20.12.12",
     "@types/npmlog": "^7.0.0",
+    "jest": "^29.7.0",
     "serverless": "^3.38.0",
     "serverless-offline": "^13.5.0",
     "serverless-prune-plugin": "^2.0.2",
