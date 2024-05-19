@@ -12,7 +12,7 @@ log.level = process.env.LOG_LEVEL || 'info';
  * Hello World Lambda function.
  *
  * @async
- * @return {Promise<Message>} Returns Tokyoto court availability data object.
+ * @return {Promise<Message>} Returns message.
  */
 export async function world() {
 	return {
